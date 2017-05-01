@@ -1,31 +1,47 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>App 1 - HTML & CSS Project</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<form>
-			<table>
-				<tr>
-					<td>NAME : </td>
-					<td><input type="text" length="20" value="name" placeholder="Enter your Name..."></td>
+<title>js main</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="javascript" type="javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+	<link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/utilities.js"></script>
+	<script type="text/javascript" src="js/submit-event.js"></script>
+</head>
+<body>
+	<h1 onclick="this.innerHTML='Javascript'">What are you learning?</h1>
+	<!--form-->
+	<form id="login" action="/login" method="post">
+			<div class="two-third-column" id="main">
+			<fieldset>
+				<legend>Login</legend>
+				<table>
+				 <tr>
+				 <td>
+				 		 <label for="username">Username:</label>
+				   		<input type="text" id="username" name="name">
+				</td>
 				</tr>
 				<tr>
-					<td>EMAIL : </td>
-					<td><input type="text" value="email" placeholder="Enter your email..."></td>
+					<td>
+						<label for="password">Password:</label>
+					    <input type="text" id="password" name="name">
+					</td>    
 				</tr>
 				<tr>
-					<td>MESSAGE : </td>
-					<td><textarea value="message"></textarea></td>
-				</tr>
-				<tr>
-					<td><button>Submit</button></td>
-					<td><button>Reset</button></td>
-				</tr>
-			</table>
-		</form>
+					<td>
+						<input type="submit" value="Login"/>
+					</td>
+				</tr>		
 
 
-		
-	</body>
+				<table>
+
+			</fieldset>
+
+			</div>
+</body>
 </html>
