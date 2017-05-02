@@ -1,32 +1,27 @@
-
 <!DOCTYPE html>
 <html>
 <title>javas</title>
 <head>
-    <title>Test</title>
+<!--stylesheet-->
+<link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript">
+    //called on forms onsubmit
+    function tosubmit()
+    {
+        //getting the value of text input
+        var mytext = document.getElementById("mytext").value;
+        //sorting the value above into localstorage
+        localStorage.setItem("mytext",mytext);
+        return true;
+    }
+        </script>
 
-        // Called on form's `onsubmit`
-        function tosubmit() {
-            // Getting the value of your text input
-            var mytext = document.getElementById("mytext").value;
-
-            // Storing the value above into localStorage
-            localStorage.setItem("mytext", mytext);
-
-            return true;
-        }
-
-    </script> 
-<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <center>   
-        <!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL --> 
-       
-
-
-    <form name="myform id="login" action="home.html" method="post" onsubmit="tosubmit();">
+    
+    <center>
+    
+    <form name="myform" id="login" action="home.html" method="post" onsubmit="tosubmit();">
 
             <div class="two-third-column" id="main">
                  <fieldset>
@@ -46,7 +41,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="Login"/>
+                        <input type="submit" value="Login"/>   
                     </td>
                 </tr>       
 
@@ -57,6 +52,7 @@
 
             </div>
     </form>  
-   
+
+
 </body>
 </html>

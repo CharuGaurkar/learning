@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	(function()
+	{
+		var pwd=document.getElementById('pwd');
+		var chk=document.getElementById('showPwd');
+		addEvent(chk,'change',function(e)
+			{
+				var target = e.target || e.srcElement;
+				try
+				{
+					if(target.checked)
+					{
+						pwd.type='text';
+					}
+					else
+					{
+						pwd.type='password';
+					}
+
+				}catch(error)
+				{
+					alert('This browser cannot switch type');
+				}
+			});
+			}());
+</script>
+<script src="js/utilities.js"></script>
+<script src="js/input-type.js"></script>
+</head>
+	<body>
+		<Center>
+		
+		<fieldset>
+			<legend>Login</legend>
+		<table>
+		<tr>
+			<td>
+				<label for="username">USERNAME:</label>
+				<input type="text" id="username" name="username">
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="pwd">PASSWORD:</label>
+				<input type="password" id="pwd" name="pwd">
+
+			</td>
+		</tr>
+		<tr>
+		<td>
+		<input type="checkbox" id="showPwd">
+		<label for="showPwd">Show Password</label>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<input type="submit" value="Login">
+		</td>
+		</tr>
+
+		</table>
+		</fieldset>
+	
+	</body>
+</html>
