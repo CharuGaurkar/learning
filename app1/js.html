@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <h1 onclick="this.innerHTML='Ooooooops!'">Click on this text</h1>
+  <h2 onclick ="this.innerHTML='charu'">my name is</h2>
+  <h1 onclick="this.innerHTML='dom events'">learning javascript</h1>
+
+  <h1 onclick="changeText(this)">Click On me!</h1>
+
+[';'] <script type="text/javascript">
+  function changeText(id)
+  {
+id.innerHTML="helo people!";
+}
+
+  	</script>
+
+
+
+<script>
+function mOver(obj) {
+    obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color:DARKSLATEBLUE;width:120px;height:20px;padding:40px;">
+Mouse Over ME</div>
+
+  </body>
+</body>
+  </html>
