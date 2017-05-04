@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-	function mOver(obj)
-	{
-		obj.innerHTML="Javascript"
-	}
-	function mOut(obj)
-	{
-		obj.innerHTML="Click!"
-	}
-</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		function mOver(obj)
+		{
+			obj.innerHTML="Javascript"
+		}
+		function mOut(obj)
+		{
+			obj.innerHTML="Click!"
+		}
+
+		$(document).ready(function()
+		{
+			$("p").click(function()
+			{
+				$(this).hide();
+
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+				$("#div3").fadeOut(3000);
+			});
+		});
+	</script>
 	
 </head>
 <body>
-<h1 onclick="this.innerHTML='heading'">Welcome</h1>
-	<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#6495ED;width:200px;height:150px;">Click!</div>
-</body>
-</html>
+	<h1 onclick="this.innerHTML='heading'">Welcome</h1>
+
+	<button>Click to fadeout</button><br><br>
+
+	<table>
+		<td>
+			<th>
+
+				<div id="div1" style="background-color:cyan;width:200px;height:150px;margin:10px;">Block2</div>
+			</th>
+		</td>
+		
+		<td>
+			<th>
+
+				<div id="div2" onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#6495ED;width:200px;height:150px;margin:10px;">Click!</div>
+			</th>
+		</td>
+		<td>
+			<th>
+				<div id="div3" style="background-color:grey;width:200px;height:150px;margin:10px;">Block3</div>
+			</th>
+		</td>
+	</table>
+	<p>If you click on me.I will Disappear</p>
+	<p> This is Fun.</p>
+	<p>Me tooo!</p>
+	</html>
