@@ -1,0 +1,106 @@
+body,
+html
+{
+	font-family: 'Raleway';
+	background-color: #fff;
+	position: absolute;
+
+}
+#image_box
+{
+	width:700px;
+	height:400px;
+	position: absolute;
+}
+img
+{
+	position: absolute;
+	height: 450px;
+	width: 800px;
+	margin: 0px;
+	padding: 0px;
+
+}
+.aside_b
+{
+	width: 450px;
+	height: 50px;
+
+	float: right;
+}
+ul
+{
+	list-style: none;
+	font-family: 'Raleway';
+	font-size: 1.5em;	
+	}
+li
+{
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	margin-right: 35px;
+	padding: 10px;
+	width: 50px;	
+	text-align: center;
+}
+
+/*form*/
+
+#aside_2
+{
+	float: right;
+	position: absolute;
+	top:200px;
+	right: 20px;
+}
+
+#tname
+{
+	background-color: #D3D3D3;
+	width: 280px;
+	height: 30px;
+	font-family: 'Raleway';
+	margin-bottom: 10px;
+
+
+}
+#tnumber
+{
+	background-color: #D3D3D3;
+	height: 40px;
+	width: 280px;
+	font-family: 'Raleway';
+
+}
+/*form closed*/
+#heading_2
+{
+	position: absolute;
+	top:500px;
+	height: 70px;
+	width: 100%;
+	
+}
+.new
+{
+
+	top: 600px;
+	position: absolute;
+
+}
+#small_1
+{
+	background-color: #48D1CC;	
+	height: 200px;
+	width: 415px;
+	margin: 10px;
+	padding: 10px;
+}
+p{
+	position: absolute;
+	text-align: center;
+	font-family: 'Raleway';
+
+
+}
